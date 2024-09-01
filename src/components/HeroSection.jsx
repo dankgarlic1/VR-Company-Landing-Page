@@ -17,6 +17,33 @@ const HeroSection = () => {
         intuitive development tools. Get started today and turn your imagination
         into immersive reality!
       </p>
+      <div className="flex justify-center my-10">
+        <a
+          href="#"
+          className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+        >
+          Start for free
+        </a>
+        <a href="#" className="border py-3 px-4 mx-3 rounded-md">
+          Documentation
+        </a>
+      </div>
+      <div className="flex justify-center mt-10">
+        <video
+          src={video1}
+          autoPlay
+          muted
+          loop
+          className="border border-orange-700 shadow-orange-400 rounded-lg w-1/2 mx-2 my-4 "
+        ></video>
+        <video
+          src={video2}
+          autoPlay
+          muted
+          loop
+          className="border border-orange-700 shadow-orange-400 rounded-lg w-1/2 mx-2 my-4"
+        ></video>
+      </div>
     </div>
   );
 };
