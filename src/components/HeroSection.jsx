@@ -7,6 +7,7 @@ const HeroSection = () => {
     <div className="flex flex-col mt-6 items-center lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:7xl text-center tracking-wide">
         VirtualR building tools
+        <br />
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
           {" "}
           for developers
@@ -30,19 +31,23 @@ const HeroSection = () => {
       </div>
       <div className="flex justify-center mt-10">
         <video
-          src={video1}
           autoPlay
           muted
           loop
           className="border border-orange-700 shadow-orange-400 rounded-lg w-1/2 mx-2 my-4 "
-        ></video>
+        >
+          <source src={video1} />
+          Your Browser does not support videos
+        </video>
         <video
-          src={video2}
           autoPlay
           muted
           loop
           className="border border-orange-700 shadow-orange-400 rounded-lg w-1/2 mx-2 my-4"
-        ></video>
+        >
+          <source src={video2} />
+          Your Browser does not support videos
+        </video>
       </div>
     </div>
   );
