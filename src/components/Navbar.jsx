@@ -44,11 +44,22 @@ const Navbar = () => {
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((items, index) => (
-                <li key={index}>
+                <li key={index} className="py-4">
                   <a href={items.href}>{items.label}</a>
                 </li>
               ))}
             </ul>
+            <div className="flex  space-x-6">
+              <a href="#" className="py-2 px-3 border rounded-md ">
+                Signin
+              </a>
+              <a
+                href="#"
+                className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+              >
+                Create an Account
+              </a>
+            </div>
           </div>
         )}
       </div>
